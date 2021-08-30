@@ -67,7 +67,6 @@ void MainWindow::loadFile(const QString filename) {
         QString strError = reader.errorString();
         qDebug() << "Last Error : " << strError;
     }
-
 }
 
 MainWindow::MainWindow(QWidget *parent)
@@ -75,6 +74,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    /* Q1 */
+
 
     QString fileName = QFileDialog::getOpenFileName(
         this, tr("open image file"),
